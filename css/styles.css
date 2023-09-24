@@ -548,8 +548,8 @@ color: #404BBF;
 }
 .modal-wind {
     position: absolute;
-    max-width: 408px;
-    max-height: 584px;
+    width: 408px;
+    min-height: 584px;
     transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
@@ -584,8 +584,8 @@ color: #404BBF;
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-closed:hover,
-.icon-closed:focus {
+.modal-closed:hover .icon-closed,
+.modal-closed:focus .icon-closed{
     fill: #ffffff;
 }
 .modal-name {
@@ -626,7 +626,7 @@ color: #404BBF;
     border-color: #4D5AE5;
     outline: none;
 }
-input:focus + .icons-wrap {
+.input:focus + .icons-wrap {
     fill: #4D5AE5;
 }
 .icons-wrap {
@@ -714,10 +714,11 @@ input:focus + .icons-wrap {
     justify-content: center;
     fill: transparent;
 }
-input[type=checkbox]:checked + .spanc {
+
+.check .visually-hidden:checked + .label-check> .spanc {
     background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd; 
+        border: none;
+        fill: #f4f4fd;
 }
 .check-link {
     color: #4D5AE5;
