@@ -1,5 +1,6 @@
 # goit-markup-hw-05
-##Cinema
+##Cinema  
+
 Cinema is a web application that allows users to learn about the latest trends in cinema and find the movies, TV shows, or cartoons they want. The project was implemented in React using data from the Movie Database (TMDB).
 
 ##Functionality
